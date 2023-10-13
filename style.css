@@ -54,7 +54,7 @@ input[type="number"] {
   grid-template-columns: 1.375fr 1fr;
   column-gap: 5rem;
 
-  background: white url('./assets/oculos.png') no-repeat bottom left;
+  background: white url('oculos.png') no-repeat bottom left;
   background-size: auto 40%;
 
   position: relative;
@@ -65,7 +65,7 @@ input[type="number"] {
   position: absolute;
   width: 31.9375rem;
   height: 2.0625rem;
-  background-image: url('./assets/grafismo-azul.svg');
+  background-image: url('grafismo-azul.svg');
   top: -1rem;
 }
 
@@ -110,7 +110,7 @@ input[type="number"] {
   font-weight: 400;
   line-height: 110%;
   
-  background: url('./assets/arrow-down.svg') no-repeat right 1rem top 50%;
+  background: url('arrow-down.svg') no-repeat right 1rem top 50%;
 }
 
 .dropdown {
