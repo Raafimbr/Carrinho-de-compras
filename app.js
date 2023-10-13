@@ -11,6 +11,12 @@ function adicionar() {
     var valor = produto[1];
     produto = produto[0];
     let quantidade = document.getElementById('quantidade').value;
+    // Verificar se a quantidade é aceita
+    if (quantidade == '' || quantidade == 0) {
+        apagarQuantidade();
+        alert('Favor, digite uma quantidade.');
+        return;
+    }
 
     // Adiciona a quantidade dos produtos
     if (valor == 100) {
@@ -21,13 +27,6 @@ function adicionar() {
         qOculus += parseInt(quantidade)
     }
 
-    // Verificar se a quantidade é aceita
-    if (quantidade == '' || quantidade == 0) {
-        apagarQuantidade();
-        alert('Favor, digite uma quantidade.');
-        return;
-    }
-    
     // Adicionar o produto no carrinho
     displayCarrinho()
     
